@@ -63,6 +63,8 @@
     <Compile Include="Assets\Script\MaterialScrpt\GetMaterialAndSetFront.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Script\MaterialScrpt\Filter.cs" />
+    <Compile Include="Assets\Script\UI\UILogic.cs" />
+    <Compile Include="Assets\Script\UI\TimeTextLogic.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\Script\Controller\TouchCaremaController.cs" />
@@ -74,12 +76,10 @@
     <Compile Include="Assets\Script\Controller\SetLight.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Script\MaterialScrpt\GetDepth.cs" />
-    <Compile Include="Assets\Script\UI\TimeTextLogic.cs" />
-    <Compile Include="Assets\Script\UI\UILogic.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Shader\GenshinSelf\Toon\Toon.cginc" />
-    <None Include="Assets\Shader\GenshinSelf\Toon\Toon_Shader.shader" />
+    <None Include="Assets\Shader\Toon\Toon.cginc" />
+    <None Include="Assets\Shader\Toon\Toon_Shader.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
