@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 public class GetMaterialAndSetFront : MonoBehaviour
 {
     private Renderer[] rendArray;

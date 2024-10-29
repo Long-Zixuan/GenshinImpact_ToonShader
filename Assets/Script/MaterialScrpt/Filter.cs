@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode]
-public class Pixelate : MonoBehaviour
+public class Filter : MonoBehaviour
 {
     public Material effectMaterial;
 

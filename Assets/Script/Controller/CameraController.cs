@@ -3,83 +3,6 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    /*private bool _isF;
-
-    // [Header("所控制的摄像机")][SerializeField] private GameObject _camera;    //可有可无
-    [Header("旋转中心目标物体")][SerializeField] private GameObject _target;
-    [Header("拖动灵敏度")][SerializeField] private float _sensitivity = 2.0f;
-    [Header("移动速度")][SerializeField] private float _speed = 0.1f;
-
-    private void Update()
-    {
-        W_A_S_D();
-        //通过键盘的F 控制切换是否锁定目标围绕着旋转
-        if (Input.GetKeyUp(KeyCode.F))
-        {
-            _isF = !_isF;
-            Debug.Log("isF=" + _isF);
-        }
-
-        if (!_isF)
-        {
-            if (Input.GetMouseButton(0))
-            {
-                Around();
-            }
-        }
-        else
-        {
-            if (Input.GetMouseButton(0))
-            {
-                LookAround();
-            }
-        }
-    }
-
-    //通过键盘的W、A、S、D控制摄像机移动的方法函数
-    private void W_A_S_D()
-    {
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.Translate(Vector3.forward * _speed);
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(Vector3.back * _speed);
-        }
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.Translate(Vector3.left * _speed);
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.Translate(Vector3.right * _speed);
-        }
-    }
-
-    //控制摄像机围绕物体旋转的方法函数
-    private void LookAround()
-    {
-        float mouseX = Input.GetAxis("Mouse X") * _sensitivity;
-        float mouseY = Input.GetAxis("Mouse Y") * _sensitivity;
-        transform.RotateAround(_target.transform.position, Vector3.up, mouseX);
-        transform.RotateAround(_target.transform.position, transform.right, -mouseY);
-        transform.LookAt(_target.transform);
-    }
-
-    //控制摄像机自由旋转的方法函数
-    private void Around()
-    {
-        float rotateX = 0;
-        float rotateY = 0;
-        rotateX = transform.localEulerAngles.x - Input.GetAxis("Mouse Y") * _sensitivity;
-        rotateY = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * _sensitivity;
-
-        transform.localEulerAngles = new Vector3(rotateX, rotateY, 0);
-    }*/
     private new Transform transform;
     public Joystick joystick_moveCarema;
     public Joystick joystick_turnCarema;
@@ -99,10 +22,6 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
-        if(MainLogic.GetOS == "Android")
-        {
-            useGUILayout = false;
-        }
         transform = GetComponent<Transform>();
         can_move_mouse = false;
         //keyboard_input = true;
@@ -112,12 +31,6 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        /*if (!useThisInput)
-        {
-            return;
-        }*/
-        //float adValue = Input.GetAxis("Horizontal");
-        //float wsValue = Input.GetAxis("Vertical");
         float adValue;
         float wsValue;
         float mxValue, myValue;

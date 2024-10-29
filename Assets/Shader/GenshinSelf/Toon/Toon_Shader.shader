@@ -1,7 +1,4 @@
-// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
-
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-//This Shader just for study,not for project  LZX-VS2022-04-02-003
+//This Shader just for study,not for project  LZX-VS2022-10-12-001
 Shader "Toon/Toon_Shader"
 {
     Properties
@@ -73,10 +70,7 @@ Shader "Toon/Toon_Shader"
         {
             Tags{"LightMode" = "ForwardBase"}
             CGPROGRAM
-           /* #pragma shader_feature _IS_DEBUG_ON
-#pragma shader_feature _IS_RIMLIGHT_DEBUG_ON
 
-            #pragma multi_compile _ _IS_FACE_ON*/
             #pragma multi_compile_fog 
             #pragma vertex vert
 
@@ -93,10 +87,7 @@ Shader "Toon/Toon_Shader"
            
             Blend SrcAlpha OneMinusSrcAlpha
             CGPROGRAM
-          /*  #pragma shader_feature _IS_DEBUG_ON
-#pragma shader_feature _IS_RIMLIGHT_DEBUG_ON
-
-            #pragma shader_feature _IS_FACE_ON*/
+         
             #pragma multi_compile_fog
             #pragma vertex vert
 			
@@ -113,10 +104,7 @@ Shader "Toon/Toon_Shader"
             Cull Front
 
             CGPROGRAM
-          /*  #pragma shader_feature _IS_DEBUG_ON
-#pragma shader_feature _IS_RIMLIGHT_DEBUG_ON
-*/
-
+    
             #pragma shader_feature _SCREAM_SPACE_OUTLINE_ON 
 			#pragma shader_feature _NORMAL_OUTLINE_ON 
             #pragma vertex vertOutline
@@ -133,11 +121,6 @@ Shader "Toon/Toon_Shader"
            
             Blend SrcAlpha OneMinusSrcAlpha
             CGPROGRAM
-          /*  #pragma shader_feature _IS_DEBUG_ON
-#pragma shader_feature _IS_RIMLIGHT_DEBUG_ON
-
-
-            #pragma shader_feature _SREAMSPACE_OUTLINE_ON */
             #pragma multi_compile_fog
 			#pragma vertex vert
 			#pragma fragment fragScreamSpaceOutline
@@ -163,12 +146,6 @@ Shader "Toon/Toon_Shader"
             }
 
             CGPROGRAM
-          /*  #pragma shader_feature _IS_DEBUG_ON
-#pragma shader_feature _IS_RIMLIGHT_DEBUG_ON
-
-
-            #pragma shader_feature _IS_FACE_ON*/
-            
 
             #pragma vertex vert
             #pragma fragment fragEyes

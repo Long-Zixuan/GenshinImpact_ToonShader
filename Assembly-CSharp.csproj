@@ -59,16 +59,12 @@
     <Compile Include="Assets\Script\Controller\MouseLogic.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
-    <Compile Include="Assets\Script\MaterialScrpt\GetVector.cs" />
     <Compile Include="Assets\Script\Controller\CameraController.cs" />
     <Compile Include="Assets\Script\MaterialScrpt\GetMaterialAndSetFront.cs" />
-    <Compile Include="Assets\Script\Controller\Move.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
-    <Compile Include="Assets\Script\MaterialScrpt\Pixelate.cs" />
-    <Compile Include="Assets\Script\Controller\TineTextLogic.cs" />
+    <Compile Include="Assets\Script\MaterialScrpt\Filter.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
-    <Compile Include="Assets\Script\Controller\PadScreenLogic.cs" />
     <Compile Include="Assets\Script\Controller\TouchCaremaController.cs" />
     <Compile Include="Assets\Script\Tool\ScreenTool.cs" />
     <Compile Include="Assets\Script\Controller\SaveCamTexture.cs" />
@@ -76,15 +72,10 @@
     <Compile Include="Assets\Script\MaterialScrpt\ScreenDepthOffest.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Script\Controller\SetLight.cs" />
-    <Compile Include="Assets\Script\Controller\UILogic.cs" />
-    <Compile Include="Assets\Script\Controller\HideUILogic.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Script\MaterialScrpt\GetDepth.cs" />
-    <Compile Include="Assets\Script\Scene\MainLogic.cs" />
-    <Compile Include="Assets\Script\Controller\MobileScreenLogic.cs" />
-    <Compile Include="Assets\Script\Controller\Round.cs" />
-    <Compile Include="Assets\Script\MaterialScrpt\Outline.cs" />
-    <Compile Include="Assets\Script\MaterialScrpt\MaterialChange.cs" />
+    <Compile Include="Assets\Script\UI\TimeTextLogic.cs" />
+    <Compile Include="Assets\Script\UI\UILogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\GenshinSelf\Toon\Toon.cginc" />
