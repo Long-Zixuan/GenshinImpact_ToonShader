@@ -1,4 +1,4 @@
-//This Shader just for study,not for project  LZX-VS2022-10-12-001
+//LZX-VS2022-10-12-002
 Shader "Toon/Toon_Shader"
 {
     Properties
